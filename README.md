@@ -16,8 +16,9 @@ INF8790 - Fondements de l'IA
 | Semaine 10  | 19 mars 2025    | Réseaux de neurones et apprentissage profond | Neurones artificiels, architectures MLP, CNN, RNN, et introduction aux frameworks comme TensorFlow et PyTorch. |
 | Semaine 11  | 26 mars 2025    | Langage naturel, compréhension et LLMs   | Introduction au traitement automatique des langues (TAL). Présentation des LLMs : architecture Transformer, pré-entraînement, fine-tuning. Applications : traduction, chatbots, génération de contenu. Défis : biais, ambiguïté. |
 | Semaine 12  | 2 avril 2025    | Planification et prise de décision       | Planification séquentielle, processus de décision markoviens (MDP), et exemples pratiques.             |
-| Semaine 13  | 9 avril 2025    | Présentations en équipes                 | Présentations en groupes sur des projets pratiques intégrant plusieurs concepts vus dans le cours.     |
-| Semaine 14  | 16 avril 2025   | Examen final                            | Évaluation écrite ou pratique sur l’ensemble des notions abordées dans le cours.                      |
-| Semaine 15  | 23 avril 2025   | Perspectives et tendances futures de l’IA | Résumé des concepts clés, domaines émergents (IA générative, IA explicable, IA embarquée), et discussion prospective. |
+| Semaine 13  | 9 avril 2025    | Perspectives et tendances futures de l’IA | Résumé des concepts clés, domaines émergents (IA générative, IA explicable, IA embarquée), et discussion prospective. |
+| Semaine 14  | 16 avril 2025   | Examen final                            | Évaluation écrite sur l’ensemble des notions abordées dans le cours.                      |
+| Semaine 15  | 23 avril 2025   | Présentations en équipes                 | Présentations en groupes sur des projets pratiques intégrant plusieurs concepts vus dans le cours.     |
+
 
 
