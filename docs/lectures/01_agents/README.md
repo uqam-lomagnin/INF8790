@@ -111,3 +111,62 @@ Et voici le rapport généré avec comme paramètre `"topic": "AI LLMs"` : [Crew
 
 ## 🛠️ **Exemple 2 : Utilisation de LangGraph pour orchestrer plusieurs agents**
 
+[Ollama](https://ollama.com) est une plateforme permettant de télécharger, exécuter et interagir localement avec des modèles de langage avancés, offrant une solution privée et flexible pour les applications basées sur l’intelligence artificielle (dixit ChatGPT).
+
+[LangGraph](https://www.langchain.com/langgraph) est un _framework_ qui facilite la conception et l’orchestration d’agents intelligents en organisant leurs interactions et processus sous forme de graphes modulaires et optimisés (dixit ChatGPT).
+
+```bash
+$ ollama serve
+```
+
+```bash
+$ conda activate inf8790
+$ pip install 'crewai[tools]' --upgrade "langgraph-cli[inmem]"
+$ pip install langchain-ollama
+$ langgraph new ./react-agent-python --template react-agent-python 
+
+📥 Attempting to download repository as a ZIP archive...
+URL: https://github.com/langchain-ai/react-agent/archive/refs/heads/main.zip
+✅ Downloaded and extracted repository to /Users/magnin/Documents/Cours/INF8790 - Fondements de l'IA/Github_INF8790/docs/lectures/01_agents/react-agent-python
+🎉 New project created at /Users/magnin/Documents/Cours/INF8790 - Fondements de l'IA/Github_INF8790/docs/lectures/01_agents/react-agent-python
+
+$ cd react-agent-python
+$ pip install -e .
+
+$ langgraph dev
+```
+
+![langgraph_dev](images/langgraph_dev.png)
+
+- 🚀 API: http://127.0.0.1:2024
+- 🎨 Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
+- 📚 API Docs: http://127.0.0.1:2024/docs
+
+![tools](images/tools.png)
+
+![call_model](images/call_model.png)
+
+```md
+Selon plusieurs sources fiables, voici quelques-unes des meilleures poutines à Montréal :
+
+1. **Pincette Bar à Homard** (Vieux-Montréal) : pour une poutine de fruits de mer élégante.
+2. **La Banquise** : une institution montréalaise ouverte 24h/24, offrant diverses variantes de poutine, notamment le T-Rex et d'autres avec des viandes.
+3. **Chez Ma Tante** : mentionné par un chef local comme l'un des meilleurs endroits pour la poutine classique.
+4. **Ma Poulle Mouillée** : également recommandé par un chef local pour sa délicieuse poutine.
+
+Vous pouvez trouver plus de détails et d'options en visitant les sites web listés ci-dessous :
+
+- OpenTable.ca
+- BBC.com/travel
+- Reddit.com/r/poutine
+- Taste.tc
+- MTLblog.com
+- CNTraveler.com
+- TimeOut.com/montreal
+- MTL.org
+- Tripadvisor.ca
+
+Profitez de votre dégustation de poutine à Montréal !
+```
+
+:bulb: `ctrl-C`pour quitter `ollama` et `langgraph dev`.
