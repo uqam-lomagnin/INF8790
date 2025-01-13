@@ -51,15 +51,7 @@ Enter your OPENAI API key (press Enter to skip): ....
 API keys and model saved to .env file
 Selected model: o1-mini
   - Created latest_ai_development/.gitignore
-  - Created latest_ai_development/pyproject.toml
-  - Created latest_ai_development/README.md
-  - Created latest_ai_development/knowledge/user_preference.txt
-  - Created latest_ai_development/src/latest_ai_development/__init__.py
-  - Created latest_ai_development/src/latest_ai_development/main.py
-  - Created latest_ai_development/src/latest_ai_development/crew.py
-  - Created latest_ai_development/src/latest_ai_development/tools/custom_tool.py
-  - Created latest_ai_development/src/latest_ai_development/tools/__init__.py
-  - Created latest_ai_development/src/latest_ai_development/config/agents.yaml
+.../...
   - Created latest_ai_development/src/latest_ai_development/config/tasks.yaml
 Crew latest-ai-development created successfully!
 
@@ -115,6 +107,8 @@ Et voici le rapport généré avec comme paramètre `"topic": "AI LLMs"` : [Crew
 
 [LangGraph](https://www.langchain.com/langgraph) est un _framework_ qui facilite la conception et l’orchestration d’agents intelligents en organisant leurs interactions et processus sous forme de graphes modulaires et optimisés (dixit ChatGPT).
 
+[QuickStart: Launch Local LangGraph Server](https://langchain-ai.github.io/langgraph/tutorials/langgraph-platform/local-server/).
+
 ```bash
 $ ollama serve
 ```
@@ -142,11 +136,15 @@ $ langgraph dev
 - 🎨 Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
 - 📚 API Docs: http://127.0.0.1:2024/docs
 
+Après avoir demandé les "Meilleures poutines à Montréal ?",
+
 ![tools](images/tools.png)
+
+l'on obtient, suite à une recherche sur le Web, et à une synthèse des réponses obtenues :
 
 ![call_model](images/call_model.png)
 
-```md
+--------------- 
 Selon plusieurs sources fiables, voici quelques-unes des meilleures poutines à Montréal :
 
 1. **Pincette Bar à Homard** (Vieux-Montréal) : pour une poutine de fruits de mer élégante.
@@ -167,6 +165,8 @@ Vous pouvez trouver plus de détails et d'options en visitant les sites web list
 - Tripadvisor.ca
 
 Profitez de votre dégustation de poutine à Montréal !
-```
 
-:bulb: `ctrl-C`pour quitter `ollama` et `langgraph dev`.
+
+:bulb: tapez `ctrl-C`pour quitter `ollama` et `langgraph dev`.
+
+--------------- 
