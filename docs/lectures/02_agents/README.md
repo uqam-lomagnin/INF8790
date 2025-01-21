@@ -4,7 +4,7 @@ Voici un exemple concret avec du code fonctionnel pour illustrer l’utilisation
 
 Ce document présente des exemples concrets d’utilisation des principales plateformes d’agents intelligents, avec du code fonctionnel.
 
-[Conda](https://docs.conda.io/en/latest/)Conda est utilisé ici pour organiser mes environnements de librairies Python.
+[Conda](https://docs.conda.io/en/latest/) est utilisé ici pour organiser mes environnements de librairies Python.
 
 Pour créer un environnement Conda basé sur Python 3.12.8 nommé `inf8790`, utilisez la commande suivante :
 
