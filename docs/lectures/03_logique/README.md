@@ -1,4 +1,4 @@
-<img style="float: right;" src="../../images/image_inf8790.png" alt="EngineeringAISystems" width="250"/>
+<img style="float: right;" src="../../images/image_inf8790.png" alt="image_inf8790" width="250"/>
 
 ## INF8790 - Fondements de l'IA
 # 03 - Logique et inférence
