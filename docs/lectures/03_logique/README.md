@@ -1,4 +1,17 @@
-[Google Colab](https://colab.google)
+<img style="float: right;" src="../../images/image_inf8790.png" alt="EngineeringAISystems" width="250"/>
+
+## INF8790 - Fondements de l'IA
+# 03 - Logique et inférence
+
+:bulb: Suggestion : les exercices suivants peuvent être réalisés sur [Google Colab](https://colab.google).
+
+## A - Inférences en chaînage arrière
+
+### Exercice : Relations de descendance avec PyDatalog
+
+Utiliser [PyDatalog](https://pypi.org/project/pyDatalog/)pour modéliser des relations familiales et répondre à des questions à l'aide de règles logiques.
+
+#### Exemple de code Prolog convertit en code PyDatalog :
 
 -------
 
@@ -40,15 +53,9 @@ print(adaptable(X, 'ensoleille', 'sec', 'sableux'))
 ```
 
 
-
-# Exercice : Relations de descendance avec PyDatalog
-
-## Objectif
-Utiliser **PyDatalog** pour modéliser des relations familiales et répondre à des questions à l'aide de règles logiques.
-
 ---
 
-## 1. Relations de descendance
+#### 1. Relations de descendance
 
 Voici les relations familiales représentées sous forme de diagramme **Mermaid** :
 
@@ -61,7 +68,7 @@ graph TD
 
 ---
 
-## 2. Faits à modéliser
+#### 2. Faits à modéliser
 
 Les relations familiales à modéliser sont les suivantes :
 
@@ -71,7 +78,7 @@ Les relations familiales à modéliser sont les suivantes :
 
 ---
 
-## 3. Questions à poser
+#### 3. Questions à poser
 
 Répondez aux questions suivantes en modélisant les faits et les règles dans PyDatalog :
 
@@ -91,7 +98,7 @@ Répondez aux questions suivantes en modélisant les faits et les règles dans P
    - Attendu : `suzanne`, `marie` & `jean`.
 ---
 
-## 4. Instructions
+#### 4. Instructions
 
 1. **Étape 1 : Définir les faits**
    - Ajouter les relations parentales fournies ci-dessus dans PyDatalog.
@@ -106,13 +113,21 @@ Répondez aux questions suivantes en modélisant les faits et les règles dans P
 [.](https://colab.research.google.com/drive/1vbrQ6af2iRHRM1WHV9sCxqv7cGnDw6AV?usp=sharing)
 
 
-# Systèmes experts
+## B -Systèmes experts (chaînage avant)
 
 Nous utiliserons ici [Experta](https://experta.readthedocs.io/en/latest/) comme moteur de règles.
 
-Voici une reprise de l'exercice précédent sous forme de chaînage avant : [famille_experta.ipynb](https://colab.research.google.com/drive/1TvNjPMrF1NuC4KtrZshrgJNJ9EnncTMz?usp=sharing)
+Voici une reprise de l'exercice précédent sous forme de chaînage avant : [famille_experta.ipynb](https://colab.research.google.com/drive/1TvNjPMrF1NuC4KtrZshrgJNJ9EnncTMz?usp=sharing).
 
-## Exercice 
+:question: Est-ce que cette utilisation d'un système expert vous semble optimal ?
 
-Programmer avec Experta les règles et le problème suivants :
+### Exercice à compléter (en cours, sinon d'ici la semaine prochaine)
+
+Programmer avec Experta les règles et la résolution du problème suivants :
 ![camions](camions.png)
+
+--------------- 
+
+<img style="float: right;" align="right" src="../../images/uqam.png" alt="uqàm" width="100"/>
+
+### Copyright (c)Laurent Magnin / UQÀM 2025
