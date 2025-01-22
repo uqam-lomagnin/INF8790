@@ -1,5 +1,8 @@
-# INF8790
-INF8790 - Fondements de l'IA
+<img style="float: right;" src="./images/image_inf8790.png" alt="image_inf8790" width="250"/>
+
+# INF8790 - Fondements de l'Intelligence Artificielle
+
+Ce cours vise à présenter aux étudiants les fondements de l'intelligence artificielle ainsi que les caractéristiques et propriétés des systèmes d'intelligence artificielle. Il vise aussi à passer en revue les approches et techniques qui permettent de concevoir et programmer des systèmes capables, dans une certaine mesure, de prendre des décisions, de raisonner, d'apprendre, de planifier, de comprendre ou de communiquer en langage naturel.
 
 | **Semaine** | **Date**        | **Titre du cours**                       | **Description**                                                                                         |
 |-------------|-----------------|------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -20,5 +23,8 @@ INF8790 - Fondements de l'IA
 | Semaine 14  | 16 avril 2025   | Examen final                            | Évaluation écrite sur l’ensemble des notions abordées dans le cours.                      |
 | Semaine 15  | 23 avril 2025   | Présentations en équipes                 | Présentations en groupes sur des projets pratiques intégrant plusieurs concepts vus dans le cours.     |
 
+--------------- 
 
+<img style="float: right;" align="right" src="../images/uqam.png" alt="uqàm" width="100"/>
 
+### Copyright (c)Laurent Magnin / UQÀM 2025
