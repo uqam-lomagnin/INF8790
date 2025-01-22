@@ -1,10 +1,15 @@
+<img style="float: right;" src="../../images/image_inf8790.png" alt="EngineeringAISystems" width="250"/>
+
+## INF8790 - Fondements de l'IA
+# 02 - Agents et systèmes multiagents
+
 Voici un exemple concret avec du code fonctionnel pour illustrer l’utilisation des plateformes LangGraph, AutoGen, et CrewAI avec Ollama. Ce contenu est formaté en Markdown pour une intégration dans votre cours sur GitHub.
 
 # Agents Intelligents et Systèmes Multi-Agents avec LangGraph, AutoGen, CrewAI, et Ollama
 
 Ce document présente des exemples concrets d’utilisation des principales plateformes d’agents intelligents, avec du code fonctionnel.
 
-[Conda](https://docs.conda.io/en/latest/)Conda est utilisé ici pour organiser mes environnements de librairies Python.
+[Conda](https://docs.conda.io/en/latest/) est utilisé ici pour organiser mes environnements de librairies Python.
 
 Pour créer un environnement Conda basé sur Python 3.12.8 nommé `inf8790`, utilisez la commande suivante :
 
@@ -171,3 +176,7 @@ Profitez de votre dégustation de poutine à Montréal !
 :bulb: tapez `ctrl-C`pour quitter `ollama` et `langgraph dev`.
 
 --------------- 
+
+<img style="float: right;" align="right" src="../../images/uqam.png" alt="uqàm" width="100"/>
+
+### Copyright (c)Laurent Magnin / UQÀM 2025
