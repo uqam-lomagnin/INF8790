@@ -9,7 +9,7 @@
 
 ### Exercice : Relations de descendance avec PyDatalog
 
-Utiliser [PyDatalog](https://pypi.org/project/pyDatalog/)pour modéliser des relations familiales et répondre à des questions à l'aide de règles logiques.
+Utiliser [PyDatalog](https://pypi.org/project/pyDatalog/) pour modéliser des relations familiales et répondre à des questions à l'aide de règles logiques.
 
 #### Exemple de code Prolog convertit en code PyDatalog :
 
@@ -83,7 +83,7 @@ Les relations familiales à modéliser sont les suivantes :
 Répondez aux questions suivantes en modélisant les faits et les règles dans PyDatalog :
 
 1. **Qui est le grand-parent de `thomas` ?**
-   - Attendu : `jean`.
+   - Attendu : `marie`.
 
 2. **Qui est l’enfant de `jean` ?**
    - Attendu : `marie`.
@@ -92,7 +92,7 @@ Répondez aux questions suivantes en modélisant les faits et les règles dans P
    - Attendu : `suzanne`.
 
 4. **`jean` est-il grand-parent de `thomas` ?**
-   - Attendu : `oui`.
+   - Attendu : `non`.
 
 4. **Quels sont les ancêtres de `thomas` ?**
    - Attendu : `suzanne`, `marie` & `jean`.
@@ -110,14 +110,16 @@ Répondez aux questions suivantes en modélisant les faits et les règles dans P
 3. **Étape 3 : Poser les requêtes**
    - Poser les questions ci-dessus et vérifier que vos résultats correspondent aux attentes.
 
-[.](https://colab.research.google.com/drive/1vbrQ6af2iRHRM1WHV9sCxqv7cGnDw6AV?usp=sharing)
+#### 5. Notebook fonctionnel
+
+[py_datalog.ipynb](notebooks/py_datalog.ipynb)
 
 
 ## B -Systèmes experts (chaînage avant)
 
 Nous utiliserons ici [Experta](https://experta.readthedocs.io/en/latest/) comme moteur de règles.
 
-Voici une reprise de l'exercice précédent sous forme de chaînage avant : [famille_experta.ipynb](https://colab.research.google.com/drive/1TvNjPMrF1NuC4KtrZshrgJNJ9EnncTMz?usp=sharing).
+Voici une reprise de l'exercice précédent sous forme de chaînage avant : [famille_experta.ipynb](notebooks/famille_experta.ipynb).
 
 :question: Est-ce que cette utilisation d'un système expert vous semble optimal ?
 
