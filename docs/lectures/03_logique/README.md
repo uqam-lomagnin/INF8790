@@ -96,6 +96,7 @@ Répondez aux questions suivantes en modélisant les faits et les règles dans P
 
 4. **Quels sont les ancêtres de `thomas` ?**
    - Attendu : `suzanne`, `marie` & `jean`.
+
 ---
 
 #### 4. Instructions
@@ -112,14 +113,14 @@ Répondez aux questions suivantes en modélisant les faits et les règles dans P
 
 #### 5. Notebook fonctionnel
 
-[py_datalog.ipynb](notebooks/py_datalog.ipynb)
+[py_datalog.ipynb](https://colab.research.google.com/drive/1vbrQ6af2iRHRM1WHV9sCxqv7cGnDw6AV?usp=sharing)
 
 
 ## B -Systèmes experts (chaînage avant)
 
 Nous utiliserons ici [Experta](https://experta.readthedocs.io/en/latest/) comme moteur de règles.
 
-Voici une reprise de l'exercice précédent sous forme de chaînage avant : [famille_experta.ipynb](notebooks/famille_experta.ipynb).
+Voici une reprise de l'exercice précédent sous forme de chaînage avant : [famille_experta.ipynb](https://colab.research.google.com/drive/1TvNjPMrF1NuC4KtrZshrgJNJ9EnncTMz?usp=sharing).
 
 :question: Est-ce que cette utilisation d'un système expert vous semble optimal ?
 
