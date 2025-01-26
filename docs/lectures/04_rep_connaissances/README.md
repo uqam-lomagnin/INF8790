@@ -5,24 +5,67 @@
 
 :bulb: Suggestion : les exercices suivants peuvent être réalisés sur [Google Colab](https://colab.google).
 
-## A - Graphs
+## A - Graphes génériques
 
 ### Exercice : Relations de descendance avec NetworkX
 
 - Utiliser [NetworkX](https://networkx.org) pour modéliser les relations suivantes :
 
 ```script
-jean est parent de marie.
-marie est parent de suzanne.
-suzanne est parent de thomas.
+Jean est parent de Marie.
+Marie est parent de Suzanne.
+Suzanne est parent de Thomas.
 ```
 
 - Trouver les descendants de Jean
-- Déterminer les ancêtres ultimes (ie les noeuds qui n'ont pas eux-même d'arcs entrants)
+- Déterminer les ancêtres ultimes (ie les nœuds qui n'ont pas eux-même d'arcs entrants)
 
 <details>
   <summary>Solution</summary>
   <a href="https://colab.research.google.com/drive/1ljCIJi2IbDJjWm71vrSMKjFuKZ793X6C?usp=sharing">inf8790_networkx.ipynb</a>
+</details>
+
+## B Graphes de connaissances
+
+### Exercice RDF & SPARQL
+
+En vous inspirant du notebook [Sparql.ipynb](https://colab.research.google.com/github/joerg84/Graph_Powered_ML_Workshop/blob/master/Sparql.ipynb), modélisez les relations suivantes :
+
+```script
+Jean est parent de Marie.
+Marie est parent de Suzanne.
+Suzanne est parent de Thomas.
+```
+
+- Trouver les enfants de Jean
+- Trouver les descendants de Jean
+- Déterminer les ancêtres ultimes (ie les nœuds qui n'ont pas eux-même d'arcs entrants)
+
+<details>
+  <summary>Solution</summary>
+  <a href="https://colab.research.google.com/drive/1XCL3cgRhqS2DDAwsfQkVJgrZE58SkPdV?usp=sharing">inf8790_sparql.ipynb</a>
+</details>
+
+### Exercice avec Cypher
+
+En vous inspirant du notebook [Cypher Intro.ipynb](https://colab.research.google.com/drive/1zgTCEOFdskYRQ45COYRww7sA6fTXE66S?usp=sharing), modélisez les relations suivantes :
+
+```script
+Jean est parent de Marie.
+
+Marie est parent de Suzanne.
+Suzanne est parent de Thomas.
+```
+
+- Lister l'ensemble des personnes
+- Lister toutes les relation Parent / Enfant
+- Trouver les enfants de Jean
+- Trouver les descendants de Jean
+- Déterminer les ancêtres ultimes (ie les nœuds qui n'ont pas eux-même d'arcs entrants)
+
+<details>
+  <summary>Solution</summary>
+  <a href="https://colab.research.google.com/drive/1qNeiZmQd9k9MtiBBePj1vZNkP6pwxUTZ?usp=sharing">inf8790_cypher.ipynb</a>
 </details>
 
 --------------- 
