@@ -22,7 +22,7 @@ suzanne est parent de thomas.
 
 <details>
   <summary>Solution</summary>
-  [inf8790_networkx.ipynb](https://colab.research.google.com/drive/1ljCIJi2IbDJjWm71vrSMKjFuKZ793X6C?usp=sharing)
+  <a href="https://colab.research.google.com/drive/1ljCIJi2IbDJjWm71vrSMKjFuKZ793X6C?usp=sharing">inf8790_networkx.ipynb</a>
 </details>
 
 --------------- 
