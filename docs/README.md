@@ -9,7 +9,7 @@ Ce cours vise à présenter aux étudiants les fondements de l'intelligence arti
 | Semaine 1   | 8 janvier 2025  | Introduction à l'intelligence artificielle | Définition et histoire de l'IA, classification des systèmes (symbolique, connexionniste, hybride), et études de cas. |
 | Semaine 2   | 15 janvier 2025 | [Agents intelligents](lectures/02_agents/README.md) | Concepts fondamentaux, historique, types d’agents (réactifs, basés sur des objectifs, utilitaires), et exemples d’applications. |
 | Semaine 3   | 22 janvier 2025 | [Logique et inférence](lectures/03_logique/README.md) | Logique propositionnelle et logique du premier ordre, inférence logique, et applications comme les systèmes experts. |
-| Semaine 4   | 29 janvier 2025 | Représentation des connaissances         | Modèles de représentation : graphes, ontologies, langages logiques, et langages comme RDF, OWL.        |
+| Semaine 4   | 29 janvier 2025 | [Représentation des connaissances](lectures/04_rep_connaissances/README.md)        | Modèles de représentation : graphes, ontologies, langages logiques, et langages comme RDF, OWL.        |
 | Semaine 5   | 5 février 2025  | Raisonnement sous incertitude            | Introduction aux probabilités, réseaux bayésiens, chaînes de Markov, et raisonnement avec des données incomplètes. |
 | Semaine 6   | 12 février 2025 | Introduction à l’apprentissage machine   | Apprentissage supervisé, non supervisé et par renforcement, avec des algorithmes classiques (régression, k-NN, etc.). |
 | Semaine 7   | 19 février 2025 | Réseaux de neurones et apprentissage profond | Neurones artificiels, architectures MLP, CNN, RNN, et introduction aux frameworks comme TensorFlow et PyTorch. |

@@ -52,7 +52,6 @@ En vous inspirant du notebook [Cypher Intro.ipynb](https://colab.research.google
 
 ```script
 Jean est parent de Marie.
-
 Marie est parent de Suzanne.
 Suzanne est parent de Thomas.
 ```
