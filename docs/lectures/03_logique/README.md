@@ -129,6 +129,11 @@ Voici une reprise de l'exercice précédent sous forme de chaînage avant : [fam
 Programmer avec Experta les règles et la résolution du problème suivants :
 ![camions](camions.png)
 
+<details>
+  <summary>Solution</summary>
+  <a href="https://colab.research.google.com/drive/1XqWWasRjqyWX19hZ6BTFsbKmTwYHoGUN?usp=sharing">inf8790_networkx.ipynb</a>
+</details>
+
 --------------- 
 
 <img style="float: right;" align="right" src="../../images/uqam.png" alt="uqàm" width="100"/>
