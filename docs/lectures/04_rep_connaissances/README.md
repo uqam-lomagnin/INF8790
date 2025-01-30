@@ -20,6 +20,8 @@ Suzanne est parent de Thomas.
 - Trouver les descendants de Jean
 - Déterminer les ancêtres ultimes (ie les nœuds qui n'ont pas eux-même d'arcs entrants)
 
+Vous pouvez vous inspirer du notebook suivant : [NetworkX.ipynb](https://colab.research.google.com/github/jdwittenauer/ipython-notebooks/blob/master/notebooks/libraries/NetworkX.ipynb).
+
 <details>
   <summary>Solution</summary>
   <a href="https://colab.research.google.com/drive/1ljCIJi2IbDJjWm71vrSMKjFuKZ793X6C?usp=sharing">inf8790_networkx.ipynb</a>
