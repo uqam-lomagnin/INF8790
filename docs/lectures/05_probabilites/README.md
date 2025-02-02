@@ -1,3 +1,10 @@
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 <img style="float: right;" src="../../images/image_inf8790.png" alt="image_inf8790" width="250"/>
 
 ## INF8790 - Fondements de l'IA
