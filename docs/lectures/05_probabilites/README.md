@@ -1,8 +1,3 @@
----
-layout: default
-title: "Accueil"
----
-
 <img style="float: right;" src="../../images/image_inf8790.png" alt="image_inf8790" width="250"/>
 
 ## INF8790 - Fondements de l'IA
