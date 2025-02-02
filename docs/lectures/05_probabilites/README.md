@@ -104,7 +104,7 @@ for i in range(N):
 - _p_test_positif_empirique_ : fraction d’individus testés positifs parmi les N.
 - _p_maladie_given_test_positif_ : proportion de malades parmi ceux testés positifs.
 5.	**Comparaison avec la théorie**
-- Formule de Bayes (analytique) : $$P(maladie | test+) = [P(positif | maladie) × P(maladie)] / P(positif)$$
+- Formule de Bayes (analytique) : $$P(maladie \mid test+) = [P(positif \mid maladie) × P(maladie)] / P(positif)$$
 - On compare le résultat simulé à la formule théorique pour voir si ça concorde (en général, la loi des grands nombres fait que la simulation se rapproche du calcul analytique).
 
 ## D : Distribution Continue ([Loi Normale](https://fr.wikipedia.org/wiki/Loi_normale))
