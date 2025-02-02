@@ -1,8 +1,19 @@
 <script type="text/javascript" async
   src="https://polyfill.io/v3/polyfill.min.js?features=es6">
 </script>
+<script type="text/javascript" async>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],  // Enables single $ for inline math
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
 <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
 </script>
 
 <img style="float: right;" src="../../images/image_inf8790.png" alt="image_inf8790" width="250"/>
