@@ -50,7 +50,7 @@ p_positive_if_healthy = 0.05  # 5% de chances d'avoir un test positif si sain
 
 ## C : théorème de Bayes _vs_ méthode de Monte-Carlo
 
-Vous devez écrier un code Python illustrant le théorème de Bayes (reprenant l'exemple médical précédent) via une [simulation de type Monte-Carlo](https://fr.wikipedia.org/wiki/Méthode_de_Monte-Carlo). L’idée est de générer artificiellement une population, d’y appliquer le taux de maladie et de tester chaque individu avec des probabilités de vrais positifs / faux positifs, afin de mesurer empiriquement $$P(Maladie | Test Positif)$$.
+Vous devez écrier un code Python illustrant le théorème de Bayes (reprenant l'exemple médical précédent) via une [simulation de type Monte-Carlo](https://fr.wikipedia.org/wiki/Méthode_de_Monte-Carlo). L’idée est de générer artificiellement une population, d’y appliquer le taux de maladie et de tester chaque individu avec des probabilités de vrais positifs / faux positifs, afin de mesurer empiriquement $$P(Maladie|Test Positif)$$.
 
 1.	**Paramètres**
 -	_p_disease_ = 0.01 : la maladie touche 1 % de la population.
