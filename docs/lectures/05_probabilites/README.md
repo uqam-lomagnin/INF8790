@@ -14,7 +14,7 @@
 
 ## A : Coin Flips (Discret)
 1.	On génère deux suites de lancers de pièce indépendants. Ces pièces étant pipées, la première à 80 % de chances d'être pile, alors que la seconde n'a que 30 % d'être pile.
-1.	On compare la probabilité jointe $$P(\text{coin1=Pile et coin2=Pile})$$ avec le produit $P(\text{coin1=Pile}) \times P(\text{coin2=Pile})$.
+1.	On compare la probabilité jointe $$P(\text{coin1=Pile et coin2=Pile})$$ avec le produit $$P(\text{coin1=Pile}) \times P(\text{coin2=Pile})$$.
 1.	On illustre ainsi le concept de probabilité conditionnelle, d’indépendance et de vérification empirique.
 
 ```python
@@ -50,7 +50,7 @@ p_positive_if_healthy = 0.05  # 5% de chances d'avoir un test positif si sain
 
 ## C : théorème de Bayes _vs_ méthode de Monte-Carlo
 
-Vous devez écrier un code Python illustrant le théorème de Bayes (reprenant l'exemple médical précédent) via une [simulation de type Monte-Carlo](https://fr.wikipedia.org/wiki/Méthode_de_Monte-Carlo). L’idée est de générer artificiellement une population, d’y appliquer le taux de maladie et de tester chaque individu avec des probabilités de vrais positifs / faux positifs, afin de mesurer empiriquement $P(Maladie | Test Positif)$.
+Vous devez écrier un code Python illustrant le théorème de Bayes (reprenant l'exemple médical précédent) via une [simulation de type Monte-Carlo](https://fr.wikipedia.org/wiki/Méthode_de_Monte-Carlo). L’idée est de générer artificiellement une population, d’y appliquer le taux de maladie et de tester chaque individu avec des probabilités de vrais positifs / faux positifs, afin de mesurer empiriquement $$P(Maladie | Test Positif)$$.
 
 1.	**Paramètres**
 -	_p_disease_ = 0.01 : la maladie touche 1 % de la population.
@@ -92,7 +92,7 @@ for i in range(N):
 5.	**Comparaison avec la théorie**
 - Formule de Bayes (analytique) :
 
-$P(maladie | test+) = [P(positif | maladie) × P(maladie)] / P(positif)$
+$$P(maladie | test+) = [P(positif | maladie) × P(maladie)] / P(positif)$$
 - On compare le résultat simulé à la formule théorique pour voir si ça concorde (en général, la loi des grands nombres fait que la simulation se rapproche du calcul analytique).
 
 ## D : Distribution Continue (Loi Normale)
