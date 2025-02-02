@@ -7,7 +7,7 @@
 
 ## A : Coin Flips (Discret)
 1.	On génère deux suites de lancers de pièce indépendants. Ces pièces étant pipées, la première à 80 % de chances d'être pile, alors que la seconde n'a que 30 % d'être pile.
-1.	On compare la probabilité jointe $P(\text{coin1=Pile et coin2=Pile})$ avec le produit $P(\text{coin1=Pile}) \times P(\text{coin2=Pile})$.
+1.	On compare la probabilité jointe $$P(\text{coin1=Pile et coin2=Pile})$$ avec le produit $P(\text{coin1=Pile}) \times P(\text{coin2=Pile})$.
 1.	On illustre ainsi le concept de probabilité conditionnelle, d’indépendance et de vérification empirique.
 
 ```python
