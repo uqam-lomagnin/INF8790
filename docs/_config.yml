@@ -6,9 +6,10 @@ sass:
     sass_dir: css
 
 kramdown:
+  input: GFM
   math_engine: mathjax
   syntax_highlighter: rouge
-  
+
 plugins:
   - jekyll-relative-links
   - jekyll-titles-from-headings
