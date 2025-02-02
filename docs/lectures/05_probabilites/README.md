@@ -17,6 +17,7 @@
 1.	On compare la probabilité jointe $$P(\text{coin1=Pile et coin2=Pile})$$ avec le produit $$P(\text{coin1=Pile}) \times P(\text{coin2=Pile})$$.
 1.	On illustre ainsi le concept de probabilité conditionnelle, d’indépendance et de vérification empirique.
 
+Code Python de référence :
 ```python
 import numpy as np
 
