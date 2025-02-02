@@ -97,7 +97,7 @@ for i in range(N):
 $$P(maladie | test+) = [P(positif | maladie) × P(maladie)] / P(positif)$$
 - On compare le résultat simulé à la formule théorique pour voir si ça concorde (en général, la loi des grands nombres fait que la simulation se rapproche du calcul analytique).
 
-## D : Distribution Continue (Loi Normale)
+## D : Distribution Continue ([Loi Normale](https://fr.wikipedia.org/wiki/Loi_normale))
 On montre que les variables aléatoires peuvent être à la fois discrètes (parties A et B) et continues (Partie C).
 
 1.	En échantillonnant une loi normale, on visualise la distribution avec un histogramme.
