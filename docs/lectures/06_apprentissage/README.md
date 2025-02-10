@@ -330,7 +330,7 @@ env = gym.make('FrozenLake-v1', is_slippery=is_slippery)
            - *Sinon*, $a \leftarrow \displaystyle \arg\max_{a'}\, Q[\text{state},\, a']$.  
         2. **Effectuer l’action** $a$ :  
            $$
-           \text{next\_state},\, r,\, \text{done},\, \text{truncated},\, \text{info} 
+           \text{next_state},\, r,\, \text{done},\, \text{truncated},\, \text{info} 
            \;\leftarrow\; \text{env.step}(a).
            $$
         3. **Mettre à jour** la valeur $Q$ :  
@@ -338,10 +338,10 @@ env = gym.make('FrozenLake-v1', is_slippery=is_slippery)
            Q[\text{state},\, a] 
            \;\leftarrow\; Q[\text{state},\, a] 
            \;+\; \alpha \Bigl(r 
-              \;+\; \gamma\,\max_{a''}\,Q[\text{next\_state},\, a''] 
+              \;+\; \gamma\,\max_{a''}\,Q[\text{next_state},\, a''] 
               \;-\; Q[\text{state},\, a]\Bigr).
            $$
-        4. $\text{state} \leftarrow \text{next\_state}$  
+        4. $\text{state} \leftarrow \text{next_state}$  
         5. $\text{total\_reward} \leftarrow \text{total\_reward} + r$  
 
      5. **Mettre à jour** $\epsilon$ :  
