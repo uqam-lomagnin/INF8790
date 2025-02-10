@@ -274,6 +274,133 @@ plt.show()
 - Essayer d'autres algorithmes de clustering (`DBSCAN`, `AgglomerativeClustering`)
 - Tester la réduction de dimension avec `t-SNE` au lieu de PCA
 
+## C - Apprentissage par renforcement
+
+Le but de l'exercice est d'implémenter l'algorithme ci-dessous en Python, ceci afin d'entraîner un agent à s'échapper d'un [Frozen Lake](https://gymnasium.farama.org/environments/toy_text/frozen_lake/).
+
+Code d'initialisation :
+```python
+!pip install gymnasium==1.0.0
+
+# Import des packages
+import gymnasium as gym
+import numpy as np
+import random
+
+# Création de l'environnement
+is_slippery=False
+env = gym.make('FrozenLake-v1', is_slippery=is_slippery)  
+# - is_slippery=True: le sol est glissant (difficile de contrôler les déplacements)
+# - mode par défaut: 4x4
+```
+:bulb: Le mode non-glissant est préférable dans un premier temps pour faciliter l'apprentissage.
+
+---
+
+### Algorithme à traduire en Python
+
+1. **Détermination du nombre d’états et d’actions**  
+   - $n\_states = \text{env.observation\_space.n}$  
+   - $n\_actions = \text{env.action\_space.n}$  
+
+2. **Paramètres de Q-learning**  
+   - $\alpha = 0.8$  (taux d’apprentissage)  
+   - $\gamma = 0.95$ (facteur de discount)  
+   - $\epsilon = 1.0$ (taux d’exploration initial)  
+   - $\epsilon_{\min} = 0.01$ (valeur minimale pour $\epsilon$)  
+   - $\epsilon_{\text{decay}} = 0.995$ (facteur de décroissance de $\epsilon$)  
+   - $\text{num\_episodes} = 10000$  
+
+3. **Initialisation de la table $Q$**  
+   - $Q \leftarrow \mathbf{0}$, de dimension $(n\_states,\, n\_actions)$.  
+
+4. **Boucle d’apprentissage**  
+   - Déclarer une liste $\text{all\_rewards}$ vide.  
+   - **Pour** chaque épisode $\,\text{episode} = 1 \dots \text{num\_episodes}$ :  
+     1. $\text{state}, \text{info} \leftarrow \text{env.reset()}$  
+     2. $\text{done} \leftarrow \text{False}$  
+     3. $\text{total\_reward} \leftarrow 0$  
+
+     4. **Tant que** $\text{done} = \text{False}$ :  
+        1. **Choix de l’action** $a$ :  
+           - Tirer un nombre aléatoire $u$ dans $[0,1]$.  
+           - *Si* $u < \epsilon$, alors $a \leftarrow \text{action aléatoire}$.  
+           - *Sinon*, $a \leftarrow \displaystyle \arg\max_{a'}\, Q[\text{state},\, a']$.  
+        2. **Effectuer l’action** $a$ :  
+           $$
+           \text{next\_state},\, r,\, \text{done},\, \text{truncated},\, \text{info} 
+           \;\leftarrow\; \text{env.step}(a).
+           $$
+        3. **Mettre à jour** la valeur $Q$ :  
+           $$
+           Q[\text{state},\, a] 
+           \;\leftarrow\; Q[\text{state},\, a] 
+           \;+\; \alpha \Bigl(r 
+              \;+\; \gamma\,\max_{a''}\,Q[\text{next\_state},\, a''] 
+              \;-\; Q[\text{state},\, a]\Bigr).
+           $$
+        4. $\text{state} \leftarrow \text{next\_state}$  
+        5. $\text{total\_reward} \leftarrow \text{total\_reward} + r$  
+
+     5. **Mettre à jour** $\epsilon$ :  
+        - *Si* $\epsilon > \epsilon_{\min}$, alors  
+          $$
+          \epsilon \;\leftarrow\; \epsilon \;\times\; \epsilon_{\text{decay}}.
+          $$
+
+     6. **Ajouter** $\text{total\_reward}$ à la liste $\text{all\_rewards}$.  
+
+---
+
+### Interprétation
+
+- À chaque **épisode**, on réinitialise l’environnement pour obtenir un état initial $s$.
+- On exécute une **boucle** jusqu’à ce que $\text{done} = \text{True}$.
+- On **sélectionne** l’action $a$ en suivant une stratégie $\epsilon$-gloutonne :
+  - Avec probabilité $\epsilon$, on **explore** en choisissant une action aléatoire.
+  - Sinon, on **exploite** la meilleure action courante selon $Q$.
+- On **observe** la récompense $r$ et le nouvel état $s'$.
+- On **met à jour** la valeur $Q(s,a)$ via la formule :
+  $$
+    Q(s,a) \leftarrow Q(s, a) + \alpha 
+    \Bigl(r + \gamma \,\max_{a''}\,Q(s',a'') - Q(s,a)\Bigr).
+  $$
+- On **réduit** $\epsilon$ progressivement afin de diminuer l’exploration.
+- On **enregistre** la récompense totale de l’épisode dans $\text{all\_rewards}$ pour analyser la progression. 
+
+---------------
+
+Code pour tester la politique apprise :
+
+```python
+def test_agent(env, Q, episodes=100):
+    successes = 0
+    steps = 0
+    for _ in range(episodes):
+        obs, info = env.reset()
+        episode_over = False
+        while not episode_over:
+            action = np.argmax(Q[obs, :])  # meilleure action
+            obs, reward, terminated, truncated, info = env.step(action)
+            if terminated and reward == 1.0:
+                successes += 1
+            steps += 1
+
+            episode_over = terminated or truncated
+    return successes / episodes, steps / episodes
+
+success_rate, steps = test_agent(env, Q, episodes=1000)
+print(f"Taux de réussite de l'agent sur 1000 épisodes de test : {success_rate*100:.2f}%")
+print(f"Durée moyenne d'un épisode : {int(steps)} pas")
+```
+
+<details>
+  <summary>Solution complète</summary>
+  <a href="https://colab.research.google.com/drive/1LFrWmbmxjVYXVteHNRcsHmF4fUNBiguK?usp=sharing">inf8790_renforcement.ipynb</a>
+</details>
+
+Pour aller plus loin : [Training an Agent](https://gymnasium.farama.org/introduction/train_agent/)
+
 --------------- 
 
 <img style="float: right;" align="right" src="../../images/uqam.png" alt="uqàm" width="100"/>
