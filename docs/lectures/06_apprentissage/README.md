@@ -319,7 +319,7 @@ env = gym.make('FrozenLake-v1', is_slippery=is_slippery)
 4. **Boucle d’apprentissage**  
    - Déclarer une liste $\text{all\_rewards}$ vide.  
    - **Pour** chaque épisode $\,\text{episode} = 1 \dots \text{num\_episodes}$ :  
-     1. $\text{state}, \text{info} \leftarrow \text{env.reset()}$  
+     1. $s, \text{info} \leftarrow \text{env.reset()}$  
      2. $\text{done} \leftarrow \text{False}$  
      3. $\text{total\_reward} \leftarrow 0$  
 
@@ -327,21 +327,21 @@ env = gym.make('FrozenLake-v1', is_slippery=is_slippery)
         1. **Choix de l’action** $a$ :  
            - Tirer un nombre aléatoire $u$ dans $[0,1]$.  
            - *Si* $u < \epsilon$, alors $a \leftarrow \text{action aléatoire}$.  
-           - *Sinon*, $a \leftarrow \displaystyle \arg\max_{a'}\, Q[\text{state},\, a']$.  
+           - *Sinon*, $a \leftarrow \displaystyle \arg\max_{a'}\, Q[s,\, a']$.  
         2. **Effectuer l’action** $a$ :  
            $$
-           \text{next_state},\, r,\, \text{done},\, \text{truncated},\, \text{info} 
+           s',\, r,\, \text{done},\, \text{truncated},\, \text{info} 
            \;\leftarrow\; \text{env.step}(a).
            $$
         3. **Mettre à jour** la valeur $Q$ :  
            $$
-           Q[\text{state},\, a] 
-           \;\leftarrow\; Q[\text{state},\, a] 
+           Q[s,\, a] 
+           \;\leftarrow\; Q[s,\, a] 
            \;+\; \alpha \Bigl(r 
-              \;+\; \gamma\,\max_{a''}\,Q[\text{next_state},\, a''] 
-              \;-\; Q[\text{state},\, a]\Bigr).
+              \;+\; \gamma\,\max_{a''}\,Q[s',\, a''] 
+              \;-\; Q[s,\, a]\Bigr).
            $$
-        4. $\text{state} \leftarrow \text{next_state}$  
+        4. $s \leftarrow s'$  
         5. $\text{total\_reward} \leftarrow \text{total\_reward} + r$  
 
      5. **Mettre à jour** $\epsilon$ :  
