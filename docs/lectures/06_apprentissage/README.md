@@ -219,8 +219,9 @@ L'objectif de cet exercice est de vous familiariser avec l'apprentissage non sup
 - Normaliser les données avec `StandardScaler`
 
 #### 3. Appliquer l'algorithme K-Means
-- Tester plusieurs valeurs de `k` (nombre de clusters)
-- Utiliser la **méthode du coude** pour choisir la meilleure valeur de `k`
+- Tester plusieurs valeurs de `k` (nombre de clusters) ;
+- Utiliser la **méthode du coude** pour choisir la meilleure valeur de `k`.
+ 
 ```python
 # 6. Méthode du coude pour estimer un nombre optimal de clusters
 inertia_values = []
@@ -237,6 +238,7 @@ plt.xlabel("Nombre de clusters k")
 plt.ylabel("Inertie (Within-Cluster Sum of Squares)")
 plt.show()
 ```
+
 - Entraîner un modèle K-Means avec la valeur optimale de `k`
 - Assigner un cluster à chaque observation
 
