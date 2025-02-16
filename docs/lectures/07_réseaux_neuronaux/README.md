@@ -31,7 +31,7 @@ Pour cela, nous allons nous baser sur les images fournies par Microsoft : [Kaggl
 
 L'exercice peut se faire en suivant le tutoriel suivant : [Image classification from scratch](https://keras.io/examples/vision/image_classification_from_scratch/).
 
-<img style="float: right;" align="right" src="gpu_t4.png" alt="gpu" width="250"/>
+<img style="float: right;" align="right" src="gpu_t4.png" alt="gpu" width="350"/>
 
 :warning: Vous devez utiliser des GPUs (en lieu et place de CPUs).
 
