@@ -39,14 +39,30 @@ Dans cet exercice, nous allons créer un **Perceptron** simple pour séparer lin
    - `numpy` pour la manipulation de tableaux.  
    - `matplotlib` pour les visualisations.  
    - `sklearn.datasets` (optionnel) si vous voulez générer un jeu de données (ex. `make_blobs`).
+   - `%matplotlib inline` pour un affichage inline dans un notebook
 
 2. **Génération du dataset**  
    - Créez ou utilisez une fonction pour générer des points 2D appartenant à deux classes séparables linéairement.  
    - Visualisez ces points pour vérifier la séparation.
 
+    ```python
+    X, y = make_blobs(n_samples=100, centers=2, n_features=2, 
+                      random_state=42, cluster_std=1.5)
+
+    # X.shape = (100, 2), y.shape = (100,)
+
+    # Visualisation des points
+    plt.figure(figsize=(6, 6))
+    plt.scatter(X[:, 0], X[:, 1], c=y, cmap='bwr')
+    plt.title("Dataset : deux classes linéairement séparables (espérons !)")
+    plt.xlabel("Axe X1")
+    plt.ylabel("Axe X2")
+    plt.show()
+    ```
+
 3. **Implémentation du Perceptron**  
    - Définissez les paramètres : $w$ (poids), $b$ (biais).  
-   - Définissez la fonction d'activation (seuil):  
+   - Définissez la fonction d'activation (seuil) `def predict(x, w, b):`  
      $$
      \hat{y} = 
      \begin{cases} 
@@ -76,13 +92,67 @@ Dans cet exercice, nous allons créer un **Perceptron** simple pour séparer lin
         - $ \hat{y} $ est la prédiction du Perceptron,
         - $ x $ est l’entrée.
 
+      ```python
+      def perceptron_train(X, y, eta=0.1, n_epochs=10):
+          # X : matrice des features (N échantillons, d dimensions)
+          # y : vecteur d'étiquettes (0 ou 1)
+          # eta : taux d'apprentissage
+          # n_epochs : nombre d'itérations sur l'ensemble des données
+
+          .../...
+      ```
+
    - Stockez l’évolution du **taux d’erreur** (ou du nombre de points mal classés) pour observer la convergence.
+
+   - Lancez l'entraînement du Perceptron
+
+      ```python
+
+      eta = 0.1       # Taux d'apprentissage
+      n_epochs = 15   # Nombre d'époques
+
+      w, b, errors = perceptron_train(X, y, eta=eta, n_epochs=n_epochs)
+
+      # Affichons l'évolution du nombre d'erreurs
+      plt.figure(figsize=(6, 4))
+      plt.plot(range(1, n_epochs+1), errors, marker='o')
+      plt.title("Evolution du nombre d'erreurs à chaque époque")
+      plt.xlabel("Epoque")
+      plt.ylabel("Nombre d'erreurs")
+      plt.show()
+      ```
 
 5. **Visualisation de la frontière de décision**  
    - Sur un graphique 2D, affichez :  
      - Les points du dataset.  
      - La frontière de décision (ligne où $w \cdot x + b = 0$).  
    - Vérifiez si votre Perceptron classe correctement la quasi-totalité des points (s’il y a convergence).
+
+    ```python
+    x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+    y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+
+    xx, yy = np.meshgrid(np.linspace(x_min, x_max, 200),
+                         np.linspace(y_min, y_max, 200))
+
+    # Pour chaque point de la grille, prédisons la classe
+    Z = np.zeros(xx.shape)
+    for i in range(xx.shape[0]):
+        for j in range(xx.shape[1]):
+            Z[i, j] = predict([xx[i, j], yy[i, j]], w, b)
+
+    # Tracé des régions
+    plt.figure(figsize=(6, 6))
+    plt.contourf(xx, yy, Z, alpha=0.2, cmap='bwr')
+
+    # Tracé des points d'entraînement
+    plt.scatter(X[:, 0], X[:, 1], c=y, cmap='bwr', edgecolors='k')
+    plt.title(f"Frontière de décision du Perceptron (eta={eta})")
+    plt.xlabel("Axe X1")
+    plt.ylabel("Axe X2")
+    plt.show()
+    ```
+
     <img src="perceptron.png" alt="perceptron" width="40%"/>
 
 6. **Aller plus loin (options)**  
