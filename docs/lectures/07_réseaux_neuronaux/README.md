@@ -84,6 +84,8 @@ Dans cet exercice, nous allons créer un **Perceptron** simple pour séparer lin
      - La frontière de décision (ligne où $w \cdot x + b = 0$).  
    - Vérifiez si votre Perceptron classe correctement la quasi-totalité des points (s’il y a convergence).
 
+![alt text](perceptron.png)
+
 6. **Aller plus loin (options)**  
    - Visualiser l’**évolution** de la frontière de décision après chaque **époque** (animation ou plots successifs).  
    - Tester d’autres types de distributions de données (plus ou moins séparables).  
