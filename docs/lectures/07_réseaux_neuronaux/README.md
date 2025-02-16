@@ -62,7 +62,7 @@ Dans cet exercice, nous allons créer un **Perceptron** simple pour séparer lin
 
 3. **Implémentation du Perceptron**  
    - Définissez les paramètres : $w$ (poids), $b$ (biais).  
-   - Définissez la fonction d'activation (seuil) `def predict(x, w, b):`  
+   - Définissez la fonction d'activation (seuil) au sein de la fonction `def predict(x, w, b):`  
      $$
      \hat{y} = 
      \begin{cases} 
@@ -107,7 +107,6 @@ Dans cet exercice, nous allons créer un **Perceptron** simple pour séparer lin
    - Lancez l'entraînement du Perceptron
 
       ```python
-
       eta = 0.1       # Taux d'apprentissage
       n_epochs = 15   # Nombre d'époques
 
