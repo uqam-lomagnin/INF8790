@@ -205,8 +205,6 @@ Comme vous pouvez le voir ci dessous, la mémoire du GPU est utilisée presque �
 </div>
 </details>
 
-## B - 
-
 --------------- 
 
 <img style="float: right;" align="right" src="../../images/uqam.png" alt="uqàm" width="100"/>
