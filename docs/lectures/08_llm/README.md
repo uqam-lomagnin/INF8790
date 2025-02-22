@@ -29,22 +29,22 @@
 
 - Pour cela, nous allons utiliser [Ollama](https://ollama.com) - lequel ne fonctionne qu'en ligne de commande -. Voici comment l'installer dans l'environnement Google Colab : [Running Ollama on Google Colab (LLaMA3 model demo)](https://colab.research.google.com/github/casualcomputer/llm_google_colab/blob/main/setup_ollama_google_colab.ipynb).
 
-:bulb: Ollama fourni un accès à de très nombreux [modèles](https://ollama.com/search).
+    :bulb: Ollama fourni un accès à de très nombreux [modèles](https://ollama.com/search).
 
-:warning: Seul les modèles les plus petits peuvent être servis dans des environnement aux ressources limitées.
+    :warning: Seul les modèles les plus petits peuvent être servis dans des environnement aux ressources limitées.
 
-:rocket: [LM Studio](https://lmstudio.ai) est équivalent à Ollama, mais è travers une interface graphique.
+    :rocket: [LM Studio](https://lmstudio.ai) est équivalent à Ollama, mais à travers une interface graphique.
 
 2. Appel à cet LLM pour répondre à des questions
 
-La bibliothèque choisie pour faire appel aux LLMs servis par Ollama est [LangChain](https://python.langchain.com/docs/introduction/).
+    La bibliothèque choisie pour faire appel aux LLMs servis par Ollama est [LangChain](https://python.langchain.com/docs/introduction/).
 
 - Répliquer la première partie ("usage") des instructions de [OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/). :bulb: Vous pouvez y ouvrir le notebook [ollama.ipynb](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/integrations/llms/ollama.ipynb).
 
-:warning: Pour pouvoir avoir Ollama disponible, vous devez (re)lancer le code suivant:
-```python
-subprocess.Popen("ollama serve", shell=True)
-```
+    :warning: Pour pouvoir avoir Ollama disponible, vous devez (re)lancer le code suivant:
+    ```python
+    subprocess.Popen("ollama serve", shell=True)
+    ```
 
 - Jouez avec l'invite (prompt), par xemple pour obtenir la réponse en Français.
 
@@ -52,11 +52,11 @@ subprocess.Popen("ollama serve", shell=True)
 
 - Reproduire la section "Multi-modal" d'[OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/).
 
-:bulb: Pour récupérer en local l'image à analyser :
-```shell
-## Download the image using curl
-!curl -o ollama_example_img.jpg https://uqam-lomagnin.github.io/INF8790/lectures/08_llm/ollama_example_img.jpg
-```
+    :bulb: Pour récupérer en local l'image à analyser :
+    ```shell
+    ## Download the image using curl
+    !curl -o ollama_example_img.jpg https://uqam-lomagnin.github.io/INF8790/lectures/08_llm/ollama_example_img.jpg
+    ```
 
 ---
 <details>
