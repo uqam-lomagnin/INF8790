@@ -46,7 +46,7 @@
     subprocess.Popen("ollama serve", shell=True)
     ```
 
-- Jouez avec l'invite (prompt), par xemple pour obtenir la réponse en Français.
+    - Jouez avec l'invite (prompt), par xemple pour obtenir la réponse en Français.
 
 3. Analyse d'image
 
