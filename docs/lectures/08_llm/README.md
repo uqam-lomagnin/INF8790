@@ -29,7 +29,7 @@
 
     - Pour cela, nous allons utiliser [Ollama](https://ollama.com) - lequel ne fonctionne qu'en ligne de commande -. Voici comment l'installer dans l'environnement Google Colab : [Running Ollama on Google Colab (LLaMA3 model demo)](https://colab.research.google.com/github/casualcomputer/llm_google_colab/blob/main/setup_ollama_google_colab.ipynb).
 
-    :bulb: Ollama fourni un accès à de très nombreux [modèles](https://ollama.com/search).
+    :bulb: Ollama fourni un accès à de très nombreux [modèles](https://ollama.com/search) ; la plupart de ces modèles étant originellement hébergés sur [Hugging Face](https://huggingface.co). 
 
     :warning: Seul les modèles les plus petits peuvent être servis dans des environnement aux ressources limitées.
 
@@ -68,9 +68,9 @@
 
 En partant de l'exercice précédent, construire un _chatbot_ (appel en boucle à un LLM en mode texte, avec mémorisation des échanges précédents).
 
-- Indiquez votre nom en début de conversation, pour ensuite demander comment vous vous appelez...
+- Par exemple, indiquez votre nom en début de conversation, pour ensuite demander comment vous vous appelez...
 
-:bulb: Pour analyser la trace de vos appels au LLM, vous pouvez utiliser [LangSmith](https://smith.langchain.com/settings) (site Web demandant d'être inscrit) ou bien [Phoenix by Arize](https://phoenix.arize.com) (gratuit, en mode local).
+:bulb: Pour analyser la trace de vos appels au LLM, vous pouvez utiliser [LangSmith](https://smith.langchain.com/settings) (site Web demandant d'y être inscrit) ou bien [Phoenix by Arize](https://phoenix.arize.com) (gratuit, en mode local).
 
 <details>
   <summary>Solution complète</summary>
