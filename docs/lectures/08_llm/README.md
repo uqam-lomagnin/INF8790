@@ -39,14 +39,14 @@
 
     La bibliothèque choisie pour faire appel aux LLMs servis par Ollama est [LangChain](https://python.langchain.com/docs/introduction/).
 
-    - Répliquer la première partie ("usage") des instructions de [OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/). :bulb: Vous pouvez y ouvrir le notebook [ollama.ipynb](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/integrations/llms/ollama.ipynb).
+    - Répliquer la première partie ("usage") des instructions de [OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/). :bulb: Vous pouvez y ouvrir un lien vers le notebook [ollama.ipynb](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/integrations/llms/ollama.ipynb).
 
     :warning: Pour pouvoir avoir Ollama disponible, vous devez (re)lancer le code suivant:
     ```python
     subprocess.Popen("ollama serve", shell=True)
     ```
 
-    - Jouez avec l'invite (prompt), par xemple pour obtenir la réponse en Français.
+    - Jouez avec l'invite (_prompt_), par exemple pour obtenir la réponse en Français.
 
 3. Analyse d'image
 
