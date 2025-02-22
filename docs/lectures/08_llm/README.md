@@ -27,7 +27,7 @@
 
 1. Mise en place d'un serveur de LLM
 
-- Pour cela, nous allons utiliser [Ollama](https://ollama.com) - lequel ne fonctionne qu'en ligne de commande -. Voici comment l'installer dans l'environnement Google Colab : [Running Ollama on Google Colab (LLaMA3 model demo)](https://colab.research.google.com/github/casualcomputer/llm_google_colab/blob/main/setup_ollama_google_colab.ipynb).
+    - Pour cela, nous allons utiliser [Ollama](https://ollama.com) - lequel ne fonctionne qu'en ligne de commande -. Voici comment l'installer dans l'environnement Google Colab : [Running Ollama on Google Colab (LLaMA3 model demo)](https://colab.research.google.com/github/casualcomputer/llm_google_colab/blob/main/setup_ollama_google_colab.ipynb).
 
     :bulb: Ollama fourni un accès à de très nombreux [modèles](https://ollama.com/search).
 
@@ -39,7 +39,7 @@
 
     La bibliothèque choisie pour faire appel aux LLMs servis par Ollama est [LangChain](https://python.langchain.com/docs/introduction/).
 
-- Répliquer la première partie ("usage") des instructions de [OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/). :bulb: Vous pouvez y ouvrir le notebook [ollama.ipynb](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/integrations/llms/ollama.ipynb).
+    - Répliquer la première partie ("usage") des instructions de [OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/). :bulb: Vous pouvez y ouvrir le notebook [ollama.ipynb](https://colab.research.google.com/github/langchain-ai/langchain/blob/master/docs/docs/integrations/llms/ollama.ipynb).
 
     :warning: Pour pouvoir avoir Ollama disponible, vous devez (re)lancer le code suivant:
     ```python
@@ -50,7 +50,7 @@
 
 3. Analyse d'image
 
-- Reproduire la section "Multi-modal" d'[OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/).
+    - Reproduire la section "Multi-modal" d'[OllamaLLM](https://python.langchain.com/docs/integrations/llms/ollama/).
 
     :bulb: Pour récupérer en local l'image à analyser :
     ```shell
