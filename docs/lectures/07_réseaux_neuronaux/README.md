@@ -200,9 +200,7 @@ Comme vous pouvez le voir ci dessous, la mémoire du GPU est utilisée presque �
 <details>
   <summary>Solution complète</summary>
     La solution complète sera révélée samedi soir prochain.
-<div style="display: none;">
   <a href="https://colab.research.google.com/drive/1qcoX7BjD_YAFMs84DNhRybohudy1Y_lz?usp=sharing">inf8790_keyras.ipynb</a>
-</div>
 </details>
 
 --------------- 
