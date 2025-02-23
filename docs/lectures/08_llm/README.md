@@ -74,9 +74,9 @@ Notamment, indiquez votre nom en début de conversation, pour ensuite demander c
 
 - :bulb: Utilisez [ChatOllama](https://python.langchain.com/docs/integrations/chat/ollama/) pour accéder au _llm_.
 
-- L'usage d'outils peut énormément apporter aux LLMs. Il n'est cependant pas nécessaire pour cet exercice. Rien ne vous empêche cependant d'explorer cette voie ! :bulb: [Tavily](https://tavily.com) offre un outil capable d'avoir accès au Web.
+- L'usage d'outils peut énormément apporter aux LLMs. Il n'est toutefois pas nécessaire d'en faire usage pour cet exercice. Rien ne vous empêche cependant d'explorer cette voie ! :bulb: [Tavily](https://tavily.com) offre un outil capable d'avoir accès au Web.
 
-- :bulb: [LangSmith](https://smith.langchain.com/settings) est un site Web d'analyse des appels LangChain/LangGraph à un LLM (lequel requière d'y être inscrit pour récupérer un Jeton (_Token_) d'accès). Alternative (gratuit, en mode local sur ordinateur) : [Phoenix by Arize](https://phoenix.arize.com).
+- :bulb: [LangSmith](https://smith.langchain.com/settings) est un site Web d'analyse des traces d'appels LangChain/LangGraph à un LLM (lequel requière d'y être inscrit pour récupérer un Jeton (_Token_) d'accès). Alternative (gratuit, en mode local sur ordinateur) : [Phoenix by Arize](https://phoenix.arize.com).
 
 <details>
   <summary>Solution complète</summary>
