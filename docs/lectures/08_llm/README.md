@@ -68,15 +68,21 @@
 
 En partant de l'exercice précédent, construire un _chatbot_ (appel en boucle à un LLM en mode texte, avec mémorisation des échanges précédents).
 
-- Par exemple, indiquez votre nom en début de conversation, pour ensuite demander comment vous vous appelez...
+Notamment, indiquez votre nom en début de conversation, pour ensuite demander comment vous vous appelez...
 
-:bulb: Pour analyser la trace de vos appels au LLM, vous pouvez utiliser [LangSmith](https://smith.langchain.com/settings) (site Web demandant d'y être inscrit) ou bien [Phoenix by Arize](https://phoenix.arize.com) (gratuit, en mode local).
+- Il est suggéré d'aller voir du côté de [LangGraph Quickstart](https://langchain-ai.github.io/langgraph/tutorials/introduction/)...
+
+- :bulb: Utilisez [ChatOllama](https://python.langchain.com/docs/integrations/chat/ollama/) pour accéder au _llm_.
+
+- L'usage d'outils peut énormément apporter aux LLMs. Il n'est cependant pas nécessaire pour cet exercice. Rien ne vous empêche cependant d'explorer cette voie ! :bulb: [Tavily](https://tavily.com) offre un outil capable d'avoir accès au Web.
+
+- :bulb: [LangSmith](https://smith.langchain.com/settings) est un site Web d'analyse des appels LangChain/LangGraph à un LLM (lequel requière d'y être inscrit pour récupérer un Jeton (_Token_) d'accès). Alternative (gratuit, en mode local sur ordinateur) : [Phoenix by Arize](https://phoenix.arize.com).
 
 <details>
   <summary>Solution complète</summary>
     La solution complète sera révélée samedi soir prochain.
 <div style="display: none;">
-  <a href="">inf8790_.ipynb</a>
+  <a href="https://colab.research.google.com/drive/1LDaxn8ZrjDTqkgbokrnIdIKh7CzNcPFW?usp=sharing">inf8790_chatbot.ipynb</a>
 </div>
 </details>
 
