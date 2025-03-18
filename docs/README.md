@@ -17,8 +17,8 @@ Ce cours vise à présenter aux étudiants les fondements de l'intelligence arti
 | **Pause**   | 5 mars 2025      | **Pause (Relâche)**                     | **Pas de cours cette semaine.**                                                                        |
 | Semaine 9   | 12 mars 2025    | Présentations personnelles (1/2)         | Premières présentations individuelles sur des sujets liés aux concepts abordés dans le cours.          |
 | Semaine 10  | 19 mars 2025    | Présentations personnelles (2/2)         | Deuxièmes présentations individuelles sur des sujets liés aux concepts abordés dans le cours.          |
-| Semaine 11  | 26 mars 2025 | Heuristiques et stratégies de parcours   | Algorithmes de recherche : BFS, DFS, A*, et applications comme la planification et la résolution de puzzles. |
-| Semaine 12  | 2 avril 2025    | Planification et prise de décision       | Planification séquentielle, processus de décision markoviens (MDP), et exemples pratiques.             |
+| Semaine 11  | 26 mars 2025 | Heuristiques, stratégies de parcours et planification   | Algorithmes de recherche : BFS, DFS, A*, et applications comme la planification (séquentielle) et la résolution de puzzles. :new: Processus de décision markoviens (MDP). |
+| Semaine 12  | 2 avril 2025    | :new: IA générative       | GANs, VAEs, modèles de diffusion, applications créatives, enjeux éthiques et perspectives.             |
 | Semaine 13  | 9 avril 2025    | Perspectives et tendances futures de l’IA | Résumé des concepts clés, domaines émergents (IA générative, IA explicable, IA embarquée), et discussion prospective. |
 | Semaine 14  | 16 avril 2025   | Examen final                            | Évaluation écrite sur l’ensemble des notions abordées dans le cours.                      |
 | Semaine 15  | 23 avril 2025   | Présentations en équipes                 | Présentations en groupes sur des projets pratiques intégrant plusieurs concepts vus dans le cours.     |
