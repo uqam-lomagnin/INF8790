@@ -80,9 +80,9 @@ Notamment, indiquez votre nom en début de conversation, pour ensuite demander c
 
 <details>
   <summary>Solution complète</summary>
-    La solution complète sera révélée samedi soir prochain.
-<div style="display: none;">
   <a href="https://colab.research.google.com/drive/1LDaxn8ZrjDTqkgbokrnIdIKh7CzNcPFW?usp=sharing">inf8790_chatbot.ipynb</a>
+<div style="display: none;">
+  La solution complète sera révélée samedi soir prochain.
 </div>
 </details>
 
