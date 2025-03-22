@@ -114,10 +114,7 @@ Explication des symboles de la politique finale :
 
 <details>
   <summary>Solution complète</summary>
-    La solution complète sera révélée samedi soir prochain.
-<div style="display: none;">
   <a href="https://colab.research.google.com/drive/1vinu7VcqrKGSLUusIUMcL6eLyIh8Odds?usp=sharing">inf8790_labyrinthe.ipynb</a>
-</div>
 </details>
 
 --------------- 
