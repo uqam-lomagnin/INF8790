@@ -26,7 +26,7 @@
 ## A - Comprendre le jeu de données Iris avec LIME
 
 ### Objectif :
-Utiliser la librairie [LIME](https://github.com/marcotcr/lime) pour interpréter les prédictions d’un modèle de classification (RandomForest) entraîné sur le jeu de données Iris.
+Utiliser la librairie [LIME](https://github.com/marcotcr/lime) pour interpréter les prédictions d’un modèle de classification (RandomForest) entraîné sur le [jeu de données Iris](https://fr.wikipedia.org/wiki/Iris_de_Fisher).
 
 ---
 
@@ -40,13 +40,13 @@ Utiliser la librairie [LIME](https://github.com/marcotcr/lime) pour interpréter
 !pip install lime --quiet
 ````
 #### Explications :
-Cette commande installe la librairie [LIME](https://pypi.org/project/lime/) qui sera utilisée pour générer des explications locales du modèle. Le paramètre --quiet permet de réduire la verbosité de l’installation.
+Cette commande installe la librairie [LIME](https://pypi.org/project/lime/) qui sera utilisée pour générer des explications locales du modèle. Le paramètre `--quiet` permet de réduire la verbosité de l’installation.
 
 ---
 ### Étape 2 : Importer les bibliothèques et charger le jeu de données
 
 #### Instructions :
-1.	Importez les bibliothèques nécessaires : NumPy, pandas, matplotlib, ainsi que les modules de scikit-learn pour charger les données et entraîner le modèle.
+1.	Importez les bibliothèques nécessaires : _NumPy_, _Pandas_, _Matplotlib_, ainsi que les modules de _scikit-learn_ pour charger les données et entraîner le modèle.
 2.	Chargez le jeu de données Iris à l’aide de `load_iris` et séparez les données en variables d’entrée et cibles.
 3.	Divisez le jeu de données en ensembles d’entraînement et de test.
 
