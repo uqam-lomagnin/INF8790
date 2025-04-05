@@ -168,6 +168,21 @@ Prenez des notes sur la compréhension des explications fournies par LIME et com
 
 ## B - SHAP
 
+En reprenant le modèle `clf = RandomForestClassifier(n_estimators=100, random_state=42)` appliqué aux données d'iris, utiliser la librairie [Shap](https://shap.readthedocs.io/en/latest/example_notebooks/tabular_examples/model_agnostic/Iris%20classification%20with%20scikit-learn.html) pour obtenir une explication des prédictions. 
+
+:bulb: Lorsqu'exécuté dans Google Colab, voici comment éviter l'erreur `Visualization omitted, Javascript library not loaded!` : [You need to import and provide matplotlib in the function call](https://github.com/shap/shap/issues/279#issuecomment-1860945852). :warning: Cette astuce ne fonctionne qu'avec une prédiction unique...
+
+![alt text](shap.png)
+
+---
+
+<details>
+  <summary>Solution complète</summary>
+  <ul>
+  <li><a href="hhttps://colab.research.google.com/drive/1GoW34vACUKA0vCAzBjPsF2sSxwbZWWp-?usp=sharing">inf8790_shap.ipynb</a>
+  <li><a href="https://colab.research.google.com/github/reheinrich/shap-tutorials/blob/main/shap-basic-guide.ipynb">shap-basic-guide.ipynb</a>
+  </ul>
+</details>
 
 --------------- 
 

@@ -19,7 +19,7 @@ Ce cours vise à présenter aux étudiants les fondements de l'intelligence arti
 | Semaine 10  | 19 mars 2025    | Présentations personnelles (2/2)         | Deuxièmes présentations individuelles sur des sujets liés aux concepts abordés dans le cours.          |
 | Semaine 11  | 26 mars 2025 | [Heuristiques, stratégies de parcours et planification](lectures/09_parcours) | Algorithmes de recherche : BFS, DFS, A*, et applications comme la planification (séquentielle) et la résolution de puzzles. :new: Processus de décision markoviens (MDP). |
 | Semaine 12  | 2 avril 2025    | [IA générative](lectures/10_ia_generative) | GANs, VAEs, modèles de diffusion, applications créatives, enjeux éthiques et perspectives.   (+ période d’[évaluation de l’enseignement](https://portailetudiant.uqam.ca/enseignement/evaluation/))          |
-| Semaine 13  | 9 avril 2025    | :new: IA opérationnelle | IA explicable, IA embarquée, conception et déploiement de solutions IA. |
+| Semaine 13  | 9 avril 2025    | [IA opérationnelle](lectures/11_ia_operationnelle) | IA explicable, IA embarquée, conception et déploiement de solutions IA. |
 | Semaine 14  | 16 avril 2025   | Examen final                            | Évaluation écrite sur l’ensemble des notions abordées dans le cours.                      |
 | Semaine 15  | 23 avril 2025   | Présentations en équipes                 | Présentations en groupes sur des projets pratiques intégrant plusieurs concepts vus dans le cours.     |
 
