@@ -179,8 +179,8 @@ En reprenant le modèle `clf = RandomForestClassifier(n_estimators=100, random_s
 <details>
   <summary>Solution complète</summary>
   <ul>
-  <li><a href="hhttps://colab.research.google.com/drive/1GoW34vACUKA0vCAzBjPsF2sSxwbZWWp-?usp=sharing">inf8790_shap.ipynb</a>
-  <li><a href="https://colab.research.google.com/github/reheinrich/shap-tutorials/blob/main/shap-basic-guide.ipynb">shap-basic-guide.ipynb</a>
+    <li><a href="hhttps://colab.research.google.com/drive/1GoW34vACUKA0vCAzBjPsF2sSxwbZWWp-?usp=sharing">inf8790_shap.ipynb</a></li>
+    <li><a href="https://colab.research.google.com/github/reheinrich/shap-tutorials/blob/main/shap-basic-guide.ipynb">shap-basic-guide.ipynb</a></li>
   </ul>
 </details>
 
