@@ -23,7 +23,7 @@
 
 :bulb: Suggestion : les exercices suivants peuvent être réalisés sur [Google Colab](https://colab.google).
 
-## A - Comprendre LIME avec le jeu de données Iris
+## A - Comprendre le jeu de données Iris avec LIME
 
 ### Objectif :
 Utiliser la librairie [LIME](https://github.com/marcotcr/lime) pour interpréter les prédictions d’un modèle de classification (RandomForest) entraîné sur le jeu de données Iris.
@@ -166,7 +166,7 @@ Prenez des notes sur la compréhension des explications fournies par LIME et com
   <a href="https://colab.research.google.com/drive/1sd_uxY3KJmjrFjRG4zNyzcPpOeWpWBlZ?usp=sharing">inf8790_lime.ipynb</a>
 </details>
 
-## B - SHAP
+## B - Comprendre le jeu de données Iris avec SHAP
 
 En reprenant le modèle `clf = RandomForestClassifier(n_estimators=100, random_state=42)` appliqué aux données d'iris, utiliser la librairie [Shap](https://shap.readthedocs.io/en/latest/example_notebooks/tabular_examples/model_agnostic/Iris%20classification%20with%20scikit-learn.html) pour obtenir une explication des prédictions. 
 
