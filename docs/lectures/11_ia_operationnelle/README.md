@@ -124,7 +124,7 @@ L’objet LimeTabularExplainer est configuré pour travailler avec des données 
 
 ```Python
 # Choix d'une instance à expliquer (par exemple, l'élément à l'indice 1)
-idx = 1
+idx = 0
 instance = X_test[idx]
 
 # Générer l'explication de l'instance sélectionnée
@@ -133,6 +133,8 @@ exp = explainer.explain_instance(instance, clf.predict_proba, num_features=4)
 # Afficher l'explication dans le notebook
 exp.show_in_notebook(show_table=True)
 ```
+
+![lime2](lime2.png)
 
 Pour visualiser graphiquement :
 ```Python
@@ -179,7 +181,7 @@ En reprenant le modèle `clf = RandomForestClassifier(n_estimators=100, random_s
 <details>
   <summary>Solution complète</summary>
   <ul>
-    <li><a href="hhttps://colab.research.google.com/drive/1GoW34vACUKA0vCAzBjPsF2sSxwbZWWp-?usp=sharing">inf8790_shap.ipynb</a></li>
+    <li><a href="https://colab.research.google.com/drive/1GoW34vACUKA0vCAzBjPsF2sSxwbZWWp-?usp=sharing">inf8790_shap.ipynb</a></li>
     <li><a href="https://colab.research.google.com/github/reheinrich/shap-tutorials/blob/main/shap-basic-guide.ipynb">shap-basic-guide.ipynb</a></li>
   </ul>
 </details>
